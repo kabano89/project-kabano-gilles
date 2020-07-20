@@ -1,0 +1,236 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.wrapper{
+    background-color: blue;
+    display: grid;
+    height: 100vh;
+   
+
+    grid-template-columns: 1fr 1fr 1fr;
+
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+
+    grid-template-areas: 
+    
+    "logo              menu                   menu"
+    "profile-picture   profile-description    social-media1"
+    "service           service                service"
+    "content1          content2               content3"
+    "about-me          about-me               about-me-photo"
+    "contact           contact                address"
+    "footer            footer                 social-media2";
+
+    font-family: 'Poppins';
+}
+
+#logo{
+    grid-area: logo;
+    background-color: #007BFF;
+    color: #FFFEFE;
+    font-size: 48px;
+}
+
+#logo a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.menu {
+    grid-area: menu;
+    
+    background-color: #007BFF;
+    color: #FFFFFF;
+    font-size: 24px;
+    padding-bottom: 30px;
+}
+
+.menu ul {
+    display: grid;
+    grid-gap: 10px;
+    padding: 0;
+    list-style: none;
+    grid-template-columns: repeat(4, 0.2fr);
+}
+
+.menu a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.profile-picture {
+    grid-area: profile-picture;
+    background-color: #007BFF;
+}
+
+.profile-picture img{
+    border-radius: 50%;
+}
+
+.profile-description {
+    grid-area: profile-description;
+    background-color: #007BFF;
+    color: #ffffff;
+    
+}
+
+.profile-description h1{
+    margin-top: 200px;
+    
+}
+
+.social-media1 {
+    grid-area: social-media1;
+    background-color: #007BFF;
+}
+
+.social-media1 li {
+    list-style: none;
+    padding: 10px;
+}
+
+.social-media1 img {
+    width: 40px;
+    height: 40px;
+}
+
+.service{
+    grid-area: service;
+    background-color: #F8F9FA;
+    text-align: center;
+    color: #001D38;
+}
+
+.content1{
+    grid-area: content1;
+    background-color: #F8F9FA;
+    text-align: center;
+}
+
+.content1 img{
+    width: 290px;
+    height: 232px;
+}
+
+.content2{
+    grid-area: content2;
+    background-color:#F8F9FA;
+    text-align: center;
+}
+
+.content2 img{
+    width: 290px;
+    height: 232px;
+}
+
+.content3{
+    grid-area: content3;
+    background-color:#F8F9FA;
+    text-align: center;
+}
+
+.content3 img{
+    width: 290px;
+    height: 232px;
+    
+}
+
+.about-me {
+    grid-area: about-me;
+    background-color: #001D38;
+    color: #ffffff;
+    text-align: left;
+}
+
+.about-me button{
+    height: 38px;
+    background:#615CFD;
+    border: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #ffffff;
+}
+
+.about-me button:hover {
+    background-color: #ffffff;
+    color:#615CFD;
+    border: 1px solid #615CFD;;
+}
+
+.about-me-photo {
+    grid-area: about-me-photo;
+    background-color: #F8F9FA;
+}
+
+
+
+.contact {
+    grid-area: contact;
+    background-color: #F8F9FA;
+}
+
+.contact input, textarea {
+    width: 90%;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.contact button{
+    height: 38px;
+    background:#615CFD;
+    border: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #ffffff;
+}
+
+.address {
+    grid-area: address;
+    background-color: brown;
+}
+
+
+
+.address img {
+    width: 60px;
+    height: 60px;
+}
+
+footer {
+    grid-area: footer;
+    background-color: #001D38;
+    text-align: center;
+}
+
+footer ul {
+    display: grid;
+    grid-gap: 10px;
+    padding: 0;
+    list-style: none;
+    grid-template-columns: repeat(3, 0.1fr);
+}
+
+footer a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.social-media2 {
+    grid-area: social-media2;
+    background-color: #001D38;
+}
+
+.social-media2 ul {
+    display: grid;
+    grid-gap: 10px;
+    padding: 0;
+    list-style: none;
+    grid-template-columns: repeat(4, 0.2fr);
+}
+
+.social-media2 img{
+    width: 30px;
+    height: 30px;
+}
+
